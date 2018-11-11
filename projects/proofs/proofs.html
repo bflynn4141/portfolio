@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../../styles/site.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/cards.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Proofs Case Study</title>
+</head>
+<body>
+	<header>
+			<div class="nav">
+				<a class="nav-item" href="../../index.html">Home</a>
+				<a class="nav-item" id="chosen" href="projects.html">Projects</a>
+				<a class="nav-item" href="writing.html">Writing</a>
+			</div>
+			<div class="nav">
+				<a href="../grabbit/grabbit.html"><img src="http://grabbit.us/images/grabbit%20logo%20rgb.png?crc=4236592416"></a>
+				<a href="../nfty/nfty.html"><img src="../../images/nfty.png"></a>
+				<a href="proofs.html"><img src="../../images/proofs.png"></a>
+			</div>
+	</header>
+	<div class="container">
+		<h1 class="title">Proofs UX Case Study</h1>
+		<div class="folio-intro">
+			<h2>What is Proofs?</h2>
+			<p id="fontsy">Proofs is a platform to create digital scarce badges on the blockchain without any code required. Proofs utilizes the Open Proofs API so any platform can mint and distribute badges to users tied to certain functions within individual applications. Open Proofs uses Meta transactions so users can acquire a digital asset and create a new wallet within one function.</p>
+
+
+			<p id="fontsy">Proofs is designed to become a common building block for other decentralized applications by providing certifications. Proofs can <strong>prove</strong> that users have accomplished a certain task within any application. Blockchain tokens, by nature of following a standard, are transferable. Proof tokens are non-transferable, as well as non-trasnferable, so contributions are provably unique to the address that completed the action.</p>
+		</div>
+		<div class="folio-item">
+			<img class="folio" src="home-badges.png">
+			<p class="folio-font">This is an example of the text being beside the image to explain what I'm talking about. This is an example of the text being beside the image to explain what I'm talking about.This is an example of the text being beside the image to explain what I'm talking about.This is an example of the text being beside the image to explain what I'm talking about.</p>
+		</div>
+		<div class="folio-item">
+			<img class="folio" src="design-home-2.png">
+			<p class="folio-font">I went with a badge design that could be customized, but could still have a similar look and feel as the entire category of badges. A solid color followed by a thicker dark border, and a drop-shadow underneath. Users could pick between 5 solid colors and 3 gradients (bronze, silver, and gold) if they wanted to resemble trophies.</p>
+		</div>
+		<div class="folio-item">
+			<img class="folio" src="design-icon-selected.png">
+			<p class="folio-font">Icons were sourced from The Noun Project. This is one of the ways to define class within the metadata of the badge. Because the badges will be primarily used as a string of data rather than gamified social signaling trophy,I decided not to allow users to pick colors for the icon color. Some color combinations would also make the badge icon difficult to see. I didn't want users submitting custom images because of copyright infringement - but we'll eventually be opening it up the ability to submit logos in the future.</p>
+		</div>
+		<div class="folio-item">
+			<img class="folio" src="design-banner-selected.png">
+			<p class="folio-font">Users can select a banner and name the badge. (This step is optional, but provides an ID of a specific class for more specificity)</p>
+		</div>
+		<div class="folio-item">
+			<img class="folio" src="design-mint.png">
+			<p class="folio-font">After the badge is designed, the user can decide what the metadata contains. Because data is stored as a string on the blockchain, the string matters more than the image. The fields on the right pre-populate based on the badge design. Badge Name is taken from the third screen on the badge creator, and  Class Name is defined by the logo/icon.
+			<br></br>
+			On this screen, we can also decide the quantity of badges that will be minted. Since these badges are digitally scarce, we need to set a discrete number to make them scarce! Here's where the slider comes into play. Based on the number chosen for the slider, the gas cost will calculate with an approx gas cost using the historical average gas price (# of badges * gas price in ETH = approx. gas cost value in $USD).</p>
+		</div>
+		<div class="folio-item">
+			<img class="folio" src="design-confirmation.png">
+			<p class="folio-font">Ah, the classic confirmation & payment screen. We'll finally be able to mint our newly created badge. You actually won't really have the badges minted, but they'll be available to mint when the Open Proofs API is called. At each point in the minting process we have a hotlink to an FAQ showing education around what the user is actually accomplishing by "minting" their badge.</p>
+		</div>
+		<div class="folio-item">
+			<img class="folio" src="home-screen-confirmed.png">
+			<p class="folio-font">This is back to the home screen. We can now see all the badges we've designed so far, and can click on the badge to see the badge details including classes used, and history (number that has been awarded so far).</p>
+		</div>
+		<div class="folio-item">
+			<img class="folio" src="badge-details.png">
+			<p class="folio-font">The last big piece in the application is being able to see how many badges were awarded to the API once deployed. Since the badges are digitally scarce, users won't be able to mint extra badges once the contract is deployed. Users won't be able to use the same Class & ID combo for new badges, preserving the value in the original badge.</p>
+		</div>
+	</div>
+</body>
+</html>

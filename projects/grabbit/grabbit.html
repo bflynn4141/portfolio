@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../../styles/site.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/cards.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+	<title>Grabbit Case Study</title>
+</head>
+<body>
+	<header>
+			<div class="nav">
+				<a class="nav-item" href="../../index.html">Home</a>
+				<a class="nav-item" id="chosen" href="../projects.html">Projects</a>
+				<a class="nav-item" href="../../writing/writing.html">Writing</a>
+			</div>
+			<div class="nav">
+				<a href=""><img src="http://grabbit.us/images/grabbit%20logo%20rgb.png?crc=4236592416"></a>
+				<a href="../nfty/nfty.html"><img src="../../images/nfty.png"></a>
+				<a href="../proofs/proofs.html"><img src="../../images/proofs.png"></a>
+			</div>
+	</header>
+	<div class="container">
+		<h1 class="title">Grabbit UX Case Study</h1>
+		<div class="folio-intro">
+			<h2>What is Grabbit?</h2>
+				<p>Grabbit is a peer-to-peer delivery platform that leveraged & incentivized an existing retail customer to pickup items for friends. The retail customer would receive money back on their own order based upon how much business they brought into the store from their friends.</p>
+			<h2>Trends, Problems & Opportunity</h2>
+				<ol>
+					<li>Last-mile-delivery for low-priced, consumable consumer goods is moving towards curbside pickup and on-demand delivery.</li>
+					<li>Friends are spending less time together in-person because of social media and video games.</li>
+					<li>New payment & hardware technology are available to split & escrow payments between multiple parties.</li>
+				</ol>
+			<h2>Goals</h2>
+				<ol>
+					<li><strong>For retailers:</strong> increase average order size, decrease operations cost, and decrease customer acquisition cost.</li>
+					<li><strong>For users:</strong> save time, save money, and build trust with friends rather than a brand.</li>
+				</ol>
+			<h2>Issues Anticipated</h2>
+				<ol>
+					<li>Solving the issue of trust with a peer-to-peer application rather than relying on a third-party with vetted independent contractors. More incomplete transactions as a result.</li>
+					<li>Solving states within the application. When a user starts a grab, how do they complete the transaction? What must be done for users to confirm pickup and delivery? How does the application show this and educate the user?</li>
+					<li>Preventing ways to game the platform when money is on the line. Users could easily send requests to friends to purchase items, and then have friends dispute charges and never buying items causing massive chargebacks. This would require a hardware device to be installed at the retail store to confirm proof-of-location with a QR code and in-person between friends.</li>
+		</div>
+		<h1 class="title" id="journey">The User Journey</h1>
+		<div class="mobile-item">
+			<img class="folio" src="grabbit-home.png">
+			<p class="folio-font">The home screen is all about showing <strong>state</strong>. If a user is currently grabbing for a couple friends, it will show on this screen. If a friend is picking up for a user, it will show on this screen as well. Everything can be seen here. Who's involved with the delivery, action buttons to confirm pickup or delivery, and progress bars. Based off user research, there is usually some dialogue between a user starts a grab. No need to start with picking the store/scrolling through menus.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="select-store.png">
+			<p class="folio-font">Since Grabbit is about pickup & economic incentives, both of these filters should be prioritized. Card sliders are used for both filters. Users accrue points (store discounts) by completing grabs at respective stores. The store with the highest balance for the user will show first in the points filter. Below will show the distance filter, descending from closest distance to the user.
+			<br></br>
+			This begins the 5-step flow to start a grab, as indicated by the scroller. Purple buttons are used for action buttons throughout the application.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="select-time.png">
+			<p class="folio-font">The user selects the store and is brought to the "Select a Time" screen. The data chosen from the previous screen moves to the top of the following screen as the user advances through the flow. On this screen, the user scrolls to find a time available for pickup. The user cannot choose a time that has already past, or a time that the store is closed. In such scenario where a user chooses this time on the scrollbar, the time will scroll back to the previously selected time. I used "Schedule my Uber ride" as inspiration for this detail.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="select-items.png">
+			<img class="folio" src="select-friends.png">
+			<p class="folio-font">After ordering food for themselves, the grabber can then choose which friends to add to the order. The friends will receive a notification to add to the order once the grabber pays themselves. This is so the grabber has skin-in-the-game to complete the delivery. The user <strong>cannot</strong> skip placing an order and then add friends. They must pickup an item for themselves. <br></br> This screen has inspiration from Snapchat. With Snapchat, a picture is taken and then sent to friends once the details have been selected.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="grabbit-checkout.png">
+			<p class="folio-font">
+				The user can edit their payment information here and confirm that the details of the order are correct. The user will not know exactly how much points they will earn for completing the order until the delivery is complete. This is done on purpose so the user cannot calculate opportunity cost for the incentives.
+			<br></br>
+				However, the user will always be shown a "minimum ammount" to earn a big discount. The grabber now needs to hit a minimum order size between all the users in the order to receive that discount. This is calculated by multiplying the average order size ($8) by n+1, where n is the total amount of users in the order (including the grabber). Based off user research, the user is willing to add at least one more user to the order if they see an additional incentive.
+			</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="grabber-confirmation.png">
+			<img class="folio" src="user-confirmation.png">
+			<p class="folio-font">Once the user clicks submit, a card pops up quickly showing the details of the order again. At this time, a push notification is sent to the other users in the order. The other users will not be able to see all the users in the order.
+			<br></br>
+			If the user selects "Place an order", they will be brought to the "Select a Store" screen to place an order. The notification has a 10-minute timer by default, which must be at least 30 minutes before the scheduled pickup. 
+			</p>
+
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="waiting-screen.png">
+			<p class="folio-font">Here is the "waiting" state. Users who place orders have a blue checkmark for the grabber. If the user rejects the request, their name will be crossed out. A timer is shown below the names for how long the user has to place an order.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="progress-1.png">
+			<p class="folio-font">After users have confirmed your order or the timer has expired, the first progress screen will appear. The green button will confirm the pickup by the user.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="progress-2.png">
+			<p class="folio-font">Here's the order details page. The user can see what items each friend has ordered and click the "Confirm pickup" button to go straight to the QR code confirmation, reinforcing that the user needs to confirm pickup in the order.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="progress-3.png">
+			<img class="folio" src="progress-4.png">
+			<p class="folio-font">It's extremely important that the user gets in the habit of confirming pickup and delivery through a QR code. In a peer-to-peer system, trust needs to be solved for because a middleman is removed. By enforcing a continous habit for a user, they'll be more likely to fulfill requirements. If the retailer hands the delivery to the grabber without the grabber confirming pickup, the entire delivery can be failed. Therefore, the user must be educated on the importance of confirming location. This is the most difficult interaction to reinforce.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="progress-2-1.png">
+			<img class="folio" src="progress-2-2.png">
+			<p class="folio-font">The grabber now needs to make the trip back to the users they're delivering to. The user confirms dropoff with a QR code confirmation.
+			<br></br>
+			There's no time limit for this interaction to end, but any user can cancel their order in the process. The users receiving the order from the grabber receive some points for completing the develiery, thus they're incentivized not to cancel and also confirm delivery through QR code confirmation.</p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="user-order.png">
+			<p class="folio-font">Backtracking a bit, here's a user after they've accepted a request from the grabber. They're on the "Select Items" screen after the grabber has already purchased the items they wanted. The user can see what items the grabber already ordered through the "Already in the basket" green text and by also clicking the purple "1" on the top left. I've found through user studies that users usually follow on what other friends purchase, almost like a form of signaling. </p>
+		</div>
+		<div class="mobile-item">
+			<img class="folio" src="user-confirmation-1.png">
+			<img class="folio" src="user-confirmation-2.png">
+			<p class="folio-font">In this screen, the user has points from completing a grab for Cup of Noodles in the past. They can apply their discount to get points off of their order. Once applied, the "Applied?" button will turn green and the discount will appear. The point total is an algorithm based upon demand from the retail store. Revealing too much information about the algorithm will result in calculated economic incentives rather than building social capital, something that the application is designed for.
+			<br></br>
+			The user can also see who the grabber is, but cannot see other users in the grab. This is to protect the privacy of others. Based off research, it does not influence a user to complete a purchase if they can see who's part of the grab.</p>
+		</div>
+	</div>
+</body>
+</html>
